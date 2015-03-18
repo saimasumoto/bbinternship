@@ -1,0 +1,307 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+@font-face {
+   font-family: 03SmartFontUI;
+   src: url('fonts/SmartFontUI.ttf') format('truetype'), url('fonts/SmartFontUI.otf') format('opentype'))
+}
+
+.btn-danger {
+	background-color: #FF8C00;
+	border-color: #FF8C00;
+}
+
+.btn-danger:hover{
+	background-color: #FF8C00;
+	border-color: #FF8C00;
+	opacity: .7;
+}
+
+body {
+	margin-top: 80px;
+	padding-top: -70px;
+	padding-bottom: 0px;
+	font-family: '03SmartFontUI', 'Noto ans CJK', 'Open Sans', courier, serif;
+	text-align: center;
+	font-weight: 400;
+}
+
+.fa-circle{
+	color: #333;
+}
+.picture, .program, .aboutus, .faq, .voice, .contact, .apply {
+	min-height: 80%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.column {
+	padding: 23px;
+	text-align: left;
+	vertical-align: center;
+}
+
+.columna {
+	text-align: left;
+	vertical-align: bottom;
+	padding: 20px;
+}
+
+textarea {
+    resize: none;
+}
+
+body, html {
+	height: 100%;
+}
+
+ul.nav {
+	font-size: 17px;
+	text-align: bottom;
+}
+
+li {
+	float: left;
+	position: relative;
+}
+
+ul li {
+	float: right;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu {
+	display: block;
+}
+
+ul.dropdown-menu {
+	width: 20px;
+	background-color: #F5F5DC;
+}
+
+a.menu:after, .dropdown-toggle:after {
+	content: none;
+}
+
+.picture {
+	text-align: center;
+	background-image: url("../images/top.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.aboutus {
+	text-align: center;
+	background-image: url("../images/aboutus.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.program {
+	text-align: center;
+	background-image: url("../images/program.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.faq {
+	text-align: center;
+	background-image: url("../images/faq.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.voice {
+	text-align: center;
+	background-image: url("../images/voice.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.contact {
+	text-align: center;
+	background-image: url("../images/contact.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.apply {
+	text-align: center;
+	background-image: url("../images/apply.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.program, .aboutus, .faq, .contact, .voice, .apply {
+	position: relative;
+    overflow: hidden;
+}
+
+.homepage {
+	padding-bottom: 30px;
+}
+
+footer {
+	background-color: #ff8500;
+	padding: 30px;
+   	text-align: left;
+   	color: white;
+	text-align: bottom;
+}
+
+.btn-lg {
+	font-size: 36px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol {
+	color: white
+}
+
+.form {
+	color: white
+}
+
+hr {
+	border-color: #FF8500;
+	width: 140px;
+	margin-top: 5px;
+}
+
+.homepage h1, .homepage h2, .homepage h3 {
+	margin: 0px;
+	padding: 10px;
+}
+
+.homepage h2 {
+	font-size: 30px;
+}
+
+.homepage h3 {
+	font-size: 24px;
+}
+
+.homepage h4 {
+	font-size: 21px;
+}
+
+.homepage h5 {
+	font-size: 19px;
+}
+
+.homepage h6 {
+	font-size: 21px;
+}
+
+.homepage p {
+	font-weight: 300;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.homepage ol {
+	font-size: 17px;
+	padding-top: 3px;
+}
+
+.col-md-3 {
+	padding: 2, 8, 2, 8px;
+}
+.homepage a:hover {
+	color: white;
+	text-decoration: none;
+	opacity: .7;
+}
+
+.homepage a {
+	color: white;
+}
+
+.space {
+	padding-top: 60px;
+}
+
+/* --- リストエリア --- */
+ol.flow {
+width: 550px; /* リストエリアの幅 */
+margin: 0;
+padding: 0;
+padding-top: 30px;
+font-size: 15px;
+list-style-type: none;
+}
+
+/* --- リスト項目 --- */
+ol.flow li {
+margin-bottom: 12px; /* リスト項目の下マージン */
+padding-bottom: 28px; /* リスト項目の下パディング */
+background: url("../images/flow_back.gif") no-repeat center bottom; /* リスト項目の背景 */
+width: 550px;
+}
+
+/* --- 最後のリスト項目 --- */
+ol.flow li.last {
+margin-bottom: 0;
+padding-bottom: 0;
+background-image: none;
+}
+
+/* --- ボックス --- */
+ol.flow dl {
+margin: 0;
+}
+
+/* --- タイトルエリア --- */
+ol.flow dt {
+padding: 9px 10px 7px; /* タイトルエリアのパディング（上、左右、下） */
+background: #ffffff url("../images/maru4_500_top.gif") no-repeat top; /* タイトルエリアの背景 */
+background-size: 550px;
+border-bottom: 1px #c0c0c0 solid; /* タイトルエリアの下境界線 */
+font-weight: bold;
+color: #999999;
+}
+
+/* --- タイトル --- */
+ol.flow dt strong {
+margin-left: 3px;
+color: #2b2b2b;
+}
+
+/* --- 本文エリア --- */
+ol.flow dd {
+margin: 0;
+padding: 15px 15px; /* 本文エリアのパディング（上下、左右） */
+background: #ffffff url("../images/maru1_500_bottom.gif") no-repeat bottom; /* 本文エリアの背景 */
+background-size: 550px;
+color: #2b2b2b;
+line-height: 150%;
+}
+
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: none;
+	opacity: .7;
+}
+
+footer p {
+	font-size: 18px;
+}

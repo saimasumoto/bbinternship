@@ -1,9 +1,23 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 
 @font-face {
-   font-family: 03SmartFontUI;
-   src: url('fonts/SmartFontUI.ttf') format('truetype'), url('fonts/SmartFontUI.otf') format('opentype'))
+ font-family: 'JapanSans100' ;
+ src: url('../fonts/JapanSans100.eot');
+ src: url('../fonts/JapanSans100.eot') format('embedded-opentype'),
+ 	  url('../fonts/JapanSans100.woff') format('woff'),
+	  url('../fonts/JapanSans100.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
 }
+
+@font-face {
+ font-family: '03SmartFontUI' ;
+ src: url('../fonts/SmartFontUI.woff') format('woff');
+ src: url('../fonts/SmartFontUI.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+ }
+
 
 .btn-danger {
 	background-color: #FF8C00;
@@ -13,16 +27,16 @@
 .btn-danger:hover{
 	background-color: #FF8C00;
 	border-color: #FF8C00;
-	opacity: .7;
 }
 
 body {
 	margin-top: 80px;
 	padding-top: -70px;
 	padding-bottom: 0px;
-	font-family: '03SmartFontUI', 'Noto ans CJK', 'Open Sans', courier, serif;
+	font-family: 'JapanSans100', '03SmartFontUI', sans-serif;
 	text-align: center;
 	font-weight: 400;
+	line-height: 2;
 }
 
 .fa-circle{
@@ -37,15 +51,21 @@ body {
 }
 
 .column {
-	padding: 23px;
-	text-align: left;
+	padding: 20px;
+	text-align: right;
 	vertical-align: center;
+	font-size: 18px;
+}
+
+.columnt {
+	text-align: left;
 }
 
 .columna {
 	text-align: left;
 	vertical-align: bottom;
 	padding: 20px;
+	font-size: 17px;
 }
 
 textarea {
@@ -61,13 +81,36 @@ ul.nav {
 	text-align: bottom;
 }
 
-li {
-	float: left;
-	position: relative;
+td {
+	padding: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: left;
 }
 
-ul li {
-	float: right;
+.navbar {
+    height: 51px;
+    background-color: #FF9d33;
+    border-color: #FF9d33;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.dropdown-menu>li>a {
+	color: white;
+}
+
+.dropdown-menu>li>a:hover {
+	color: white;
+	background-color: #ff9d33;
+	text-decoration: underline;
 }
 
 ul.nav li.dropdown:hover ul.dropdown-menu {
@@ -75,8 +118,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 }
 
 ul.dropdown-menu {
-	width: 20px;
-	background-color: #F5F5DC;
+	background-color: #FF9d33;
+}
+
+li ul li {
+	text-align: center;
 }
 
 a.menu:after, .dropdown-toggle:after {
@@ -156,23 +202,28 @@ a.menu:after, .dropdown-toggle:after {
 }
 
 footer {
-	background-color: #ff8500;
+	background-color: #FF9d33;
 	padding: 30px;
    	text-align: left;
    	color: white;
 	text-align: bottom;
+	line-height: 1.5;
 }
 
 .btn-lg {
 	font-size: 36px;
 }
 
-h1, h2, h3, h4, h5, h6, p, ol {
+h1, h2, h3, h4, h5, h6, p, li, ol {
 	color: white
 }
 
 .form {
 	color: white
+}
+
+textarea, input {
+	color: black;
 }
 
 hr {
@@ -213,26 +264,57 @@ hr {
 	padding-bottom: 10px;
 }
 
-.homepage ol {
+.ryakureki p {
+	font-size: 13px;
+}
+
+.homepage li {
 	font-size: 17px;
 	padding-top: 3px;
+
 }
 
 .col-md-3 {
 	padding: 2, 8, 2, 8px;
 }
-.homepage a:hover {
+.picture a:hover, .program a:hover, .aboutus a:hover {
 	color: white;
 	text-decoration: none;
-	opacity: .7;
 }
 
-.homepage a {
+.homepage a, footer a {
 	color: white;
 }
 
 .space {
 	padding-top: 60px;
+}
+
+.question, .answer {
+	text-align: left;
+}
+
+.question h4 {
+	color: lightblue;
+	line-height: 2;
+	text-indent: 50px;
+}
+
+.answer h5 {
+	color: pink;
+	line-height: 1.6;
+}
+
+.talk {
+	padding-top: 60px;
+}
+
+.talk h3, .talk p {
+	text-align: left;
+}
+
+.talk h3 {
+	color: #ff8500;
 }
 
 /* --- リストエリア --- */
@@ -250,7 +332,7 @@ ol.flow li {
 margin-bottom: 12px; /* リスト項目の下マージン */
 padding-bottom: 28px; /* リスト項目の下パディング */
 background: url("../images/flow_back.gif") no-repeat center bottom; /* リスト項目の背景 */
-width: 550px;
+width: 575px;
 }
 
 /* --- 最後のリスト項目 --- */
@@ -268,11 +350,12 @@ margin: 0;
 /* --- タイトルエリア --- */
 ol.flow dt {
 padding: 9px 10px 7px; /* タイトルエリアのパディング（上、左右、下） */
-background: #ffffff url("../images/maru4_500_top.gif") no-repeat top; /* タイトルエリアの背景 */
-background-size: 550px;
+background-color: #e8e8e8;
+background-size: 575px;
 border-bottom: 1px #c0c0c0 solid; /* タイトルエリアの下境界線 */
 font-weight: bold;
 color: #999999;
+border-radius: 6px 6px 0px 0px;
 }
 
 /* --- タイトル --- */
@@ -285,23 +368,42 @@ color: #2b2b2b;
 ol.flow dd {
 margin: 0;
 padding: 15px 15px; /* 本文エリアのパディング（上下、左右） */
-background: #ffffff url("../images/maru1_500_bottom.gif") no-repeat bottom; /* 本文エリアの背景 */
-background-size: 550px;
+background-color: #ffffff;
+background-size: 575px;
 color: #2b2b2b;
 line-height: 150%;
+border-radius: 0px 0px 6px 6px;
 }
 
-
-footer a {
-	color: white;
-}
 
 footer a:hover {
 	color: white;
-	text-decoration: none;
-	opacity: .7;
+	text-decoration: underline;
 }
 
 footer p {
 	font-size: 18px;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 30px;
+  padding: 0px 0;
+  margin: 1px 0 0;
+  font-size: 14px;
+  text-align: right;
+  list-style: none;
+  background-color: black;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-top: 0px solid black;
+  border-radius: 0px;
+  -webkit-box-shadow: blue;
+  box-shadow: gray;
 }

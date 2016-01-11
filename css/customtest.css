@@ -1,0 +1,410 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+@font-face {
+ font-family: 'JapanSans100' ;
+ src: url('../fonts/JapanSans100.eot');
+ src: url('../fonts/JapanSans100.eot') format('embedded-opentype'),
+ 	  url('../fonts/JapanSans100.woff') format('woff'),
+	  url('../fonts/JapanSans100.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: '03SmartFontUI' ;
+ src: url('../fonts/SmartFontUI.woff') format('woff');
+ src: url('../fonts/SmartFontUI.ttf') format('truetype');
+ font-weight: normal;
+ font-style: normal;
+ }
+
+
+.btn-danger {
+	background-color: #FF8C00;
+	border-color: #FF8C00;
+}
+
+.btn-danger:hover{
+	background-color: #FF8C00;
+	border-color: #FF8C00;
+}
+
+body {
+	margin-top: 80px;
+	padding-top: -70px;
+	padding-bottom: 0px;
+	font-family: 'JapanSans100', '03SmartFontUI', sans-serif;
+	text-align: center;
+	font-weight: 400;
+	line-height: 2;
+	font-size: 18px;
+}
+
+.fa-circle{
+	color: #333;
+}
+.picture, .program, .aboutus, .faq, .voice, .contact, .apply {
+
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.column {
+	padding: 20px;
+	text-align: right;
+	vertical-align: center;
+	font-size: 100%;
+}
+
+.columnt {
+	text-align: left;
+}
+
+.columna {
+	text-align: left;
+	vertical-align: bottom;
+	padding: 20px;
+	font-size: 94%;
+}
+
+textarea {
+    resize: none;
+}
+
+body, html {
+	height: 100%;
+}
+
+ul.nav {
+	font-size: 94%;
+	text-align: bottom;
+}
+
+td {
+	padding: 3px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.navbar {
+    height: 51px;
+    background-color: #FF9d33;
+    border-color: #FF9d33;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.dropdown-menu>li>a {
+	color: white;
+}
+
+.dropdown-menu>li>a:hover {
+	color: white;
+	background-color: #ff9d33;
+	text-decoration: underline;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu {
+	display: block;
+}
+
+ul.dropdown-menu {
+	background-color: #FF9d33;
+}
+
+li ul li {
+	text-align: center;
+}
+
+a.menu:after, .dropdown-toggle:after {
+	content: none;
+}
+
+.picture {
+	text-align: center;
+	background-image: url("../images/top.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.aboutus {
+	text-align: center;
+	background-image: url("../images/aboutus.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.program {
+	text-align: center;
+	background-image: url("../images/program.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.faq {
+	text-align: center;
+	background-image: url("../images/faq.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.voice {
+	text-align: center;
+	background-image: url("../images/voice.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.contact {
+	text-align: center;
+	background-image: url("../images/contact.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.apply {
+	text-align: center;
+	background-image: url("../images/apply.jpg");
+	opacity: 1;
+	font-weight: 100;
+	margin-top: -30px;
+	padding-top: 30px;
+}
+
+.program, .aboutus, .faq, .contact, .voice, .apply {
+	position: relative;
+    overflow: hidden;
+}
+
+.homepage {
+	padding-bottom: 30px;
+}
+
+footer {
+	background-color: #FF9d33;
+	padding: 30px;
+   	text-align: left;
+   	color: white;
+	text-align: bottom;
+	line-height: 1.5;
+}
+
+.btn-lg {
+	font-size: 200%;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, ol {
+	color: white
+}
+
+.form {
+	color: white
+}
+
+textarea, input {
+	color: black;
+}
+
+hr {
+	border-color: #FF8500;
+	width: 140px;
+	margin-top: 5px;
+}
+
+.homepage h1, .homepage h2, .homepage h3 {
+	margin: 0px;
+	padding: 10px;
+}
+
+.homepage h2 {
+	font-size: 150%;
+}
+
+.homepage h3 {
+	font-size: 133%;
+}
+
+.homepage h4 {
+	font-size: 116%;
+}
+
+.homepage h5 {
+	font-size: 105%;
+}
+
+.homepage h6 {
+	font-size: 116%;
+}
+
+.homepage p {
+	font-weight: 300;
+	font-size: 94%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.ryakureki p {
+	font-size: 72%;
+}
+
+.homepage li {
+	font-size: 94%;
+	padding-top: 3px;
+
+}
+
+.col-md-3 {
+	padding: 2, 8, 2, 8px;
+}
+.picture a:hover, .program a:hover, .aboutus a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.homepage a, footer a {
+	color: white;
+}
+
+.space {
+	padding-top: 60px;
+}
+
+.question, .answer {
+	text-align: left;
+}
+
+.question h4 {
+	color: lightblue;
+	line-height: 2;
+	text-indent: 50px;
+}
+
+.answer h5 {
+	color: pink;
+	line-height: 1.6;
+}
+
+.talk {
+	padding-top: 60px;
+}
+
+.talk h3, .talk p {
+	text-align: left;
+}
+
+.talk h3 {
+	color: #ff8500;
+}
+
+/* --- リストエリア --- */
+ol.flow {
+width: 550px; /* リストエリアの幅 */
+margin: 0;
+padding: 0;
+padding-top: 30px;
+font-size: 83%;
+list-style-type: none;
+}
+
+/* --- リスト項目 --- */
+ol.flow li {
+margin-bottom: 12px; /* リスト項目の下マージン */
+padding-bottom: 28px; /* リスト項目の下パディング */
+background: url("../images/flow_back.gif") no-repeat center bottom; /* リスト項目の背景 */
+width: 575px;
+}
+
+/* --- 最後のリスト項目 --- */
+ol.flow li.last {
+margin-bottom: 0;
+padding-bottom: 0;
+background-image: none;
+}
+
+/* --- ボックス --- */
+ol.flow dl {
+margin: 0;
+}
+
+/* --- タイトルエリア --- */
+ol.flow dt {
+padding: 9px 10px 7px; /* タイトルエリアのパディング（上、左右、下） */
+background-color: #e8e8e8;
+background-size: 575px;
+border-bottom: 1px #c0c0c0 solid; /* タイトルエリアの下境界線 */
+font-weight: bold;
+color: #999999;
+border-radius: 6px 6px 0px 0px;
+}
+
+/* --- タイトル --- */
+ol.flow dt strong {
+margin-left: 3px;
+color: #2b2b2b;
+}
+
+/* --- 本文エリア --- */
+ol.flow dd {
+margin: 0;
+padding: 15px 15px; /* 本文エリアのパディング（上下、左右） */
+background-color: #ffffff;
+background-size: 575px;
+color: #2b2b2b;
+line-height: 150%;
+border-radius: 0px 0px 6px 6px;
+}
+
+
+footer a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+footer p {
+	font-size: 100%;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 30px;
+  padding: 0px 0;
+  margin: 1px 0 0;
+  font-size: 77%;
+  text-align: right;
+  list-style: none;
+  background-color: black;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-top: 0px solid black;
+  border-radius: 0px;
+  -webkit-box-shadow: blue;
+  box-shadow: gray;
+}
